@@ -4,20 +4,11 @@ var ctx = document.getElementById("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
     type: "line",
     data: {
-        labels: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-        ],
+        labels: ["Hadir", "Izin", "Sakit", "Alpha"],
         datasets: [
             {
                 label: "Sales",
-                data: [3200, 1800, 4305, 3022, 6310, 5120, 5880, 6154],
+                data: [3200, 1800, 4305, 3022],
                 borderWidth: 2,
                 backgroundColor: "rgba(63,82,227,.8)",
                 borderWidth: 0,
@@ -29,7 +20,7 @@ var myChart = new Chart(ctx, {
             },
             {
                 label: "Budget",
-                data: [2207, 3403, 2200, 5025, 2302, 4208, 3880, 4880],
+                data: [2207, 3403, 2200, 5025],
                 borderWidth: 2,
                 backgroundColor: "rgba(254,86,83,.7)",
                 borderWidth: 0,
