@@ -94,3 +94,8 @@ Route::get('/add-data-waliMurid', function() {
 Route::get('/add-data-pegawai', function() {
     return view('pages.data.tambahDataPegawai');
 })->name('tambah.data.pegawai');
+
+// ADD jenis pegawai
+Route::get('/add-jenis-pegawai', function() {
+    return view('pages.data.tambahJenisPegawai');
+})->name('tambah.jenis.pegawai');
