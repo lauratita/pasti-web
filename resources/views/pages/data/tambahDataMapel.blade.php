@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Form Data Kelas')
+@section('title', 'Form Data Mata Pelajaran')
 @push('style')
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="{{ asset('library/bootstrap-daterangepicker/daterangepicker.css') }}">
@@ -15,10 +15,10 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Form Data Kelas</h1>
+                <h1>Form Data Mata Pelajaran</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard') }}">Dashboard</a></div>
-                    <div class="breadcrumb-item">Tambah Data Kelas</div>
+                    <div class="breadcrumb-item">Tambah Data Mata Pelajaran</div>
                 </div>
             </div>
 
@@ -28,40 +28,21 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label>Kelas</label>
-                                        <select class="form-control">
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                        </select>
+                                    <div class="form-group col-md-6">
+                                        <label>Kode Mata Pelajaran</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                    <div class="form-group col-md-4">
-                                        <label>Jurusan</label>
-                                        <select class="form-control">
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label>Nomor Kelas</label>
+                                    <div class="form-group col-md-6">
+                                        <label>Jenis Mata Pelajaran</label>
                                         <select class="form-control">
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label>Nama Kelas</label>
-                                        <input type="text" class="form-control" readonly="" value="Nama Kelas">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label>Wali Kelas</label>
-                                        <select class="form-control">
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                        </select>
-                                    </div>
+                                <div class="form-group">
+                                    <label>Nama Mata Pelajaran</label>
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="card-footer text-right">

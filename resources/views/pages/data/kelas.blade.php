@@ -36,7 +36,7 @@
                                 </div>
                                 <a href="{{ route('tambah.data.kelas') }}" class="btn btn-icon icon-left btn-primary"><i
                                         class="far fa-edit"></i>
-                                    Tambah Siswa</a>
+                                    Tambah Kelas</a>
                             </div>
                             <div class="card-body p-0">
                                 <div class="table-responsive">

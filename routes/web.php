@@ -74,3 +74,8 @@ Route::get('/add-data-siswa', function() {
 Route::get('/add-data-kelas', function() {
     return view('pages.data.tambahDataKelas');
 })->name('tambah.data.kelas');
+
+// ADD data mapel
+Route::get('/add-data-mapel', function() {
+    return view('pages.data.tambahDataMapel');
+})->name('tambah.data.mapel');
