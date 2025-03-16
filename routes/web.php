@@ -89,3 +89,8 @@ Route::get('/add-data-detailMapel', function() {
 Route::get('/add-data-waliMurid', function() {
     return view('pages.data.tambahWaliMurid');
 })->name('tambah.data.waliMurid');
+
+// ADD data pegawai
+Route::get('/add-data-pegawai', function() {
+    return view('pages.data.tambahDataPegawai');
+})->name('tambah.data.pegawai');
