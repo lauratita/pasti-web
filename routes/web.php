@@ -79,3 +79,8 @@ Route::get('/add-data-kelas', function() {
 Route::get('/add-data-mapel', function() {
     return view('pages.data.tambahDataMapel');
 })->name('tambah.data.mapel');
+
+// ADD data detail mapel
+Route::get('/add-data-detailMapel', function() {
+    return view('pages.data.tambahDetailMapel');
+})->name('tambah.data.detail');

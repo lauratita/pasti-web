@@ -34,141 +34,288 @@
                                         </div>
                                     </form>
                                 </div>
+                                <a href="{{ route('tambah.data.detail') }}" class="btn btn-icon icon-left btn-primary"><i
+                                        class="far fa-edit"></i>
+                                    Tambah Detail Mapel</a>
                             </div>
                             <div class="card-body p-0">
                                 <div class="table-responsive">
                                     <table class="table-striped table" id="sortable-table">
                                         <thead>
                                             <tr>
-                                                <th class="text-center">
-                                                    <i class="fas fa-th"></i>
-                                                </th>
-                                                <th>Task Name</th>
-                                                <th>Progress</th>
-                                                <th>Members</th>
-                                                <th>Due Date</th>
-                                                <th>Status</th>
+                                                <th>Id Jadwal</th>
+                                                <th>Hari</th>
+                                                <th>Kelas</th>
+                                                <th>Mata Pelajaran</th>
+                                                <th>Jam Awal</th>
+                                                <th>Jam Akhir</th>
+                                                <th>Guru</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>1</td>
                                                 <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Create a mobile app</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="100%">
-                                                        <div class="progress-bar bg-success" data-width="100"></div>
-                                                    </div>
+                                                    Senin
                                                 </td>
                                                 <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-5.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Wildan Ahdian">
+                                                    10 RPL
                                                 </td>
-                                                <td>2018-01-20</td>
+                                                <td>PBO</td>
                                                 <td>
-                                                    <div class="badge badge-success">Completed</div>
+                                                    06:45:00
                                                 </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>1</td>
                                                 <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Redesign homepage</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="0%">
-                                                        <div class="progress-bar" data-width="0"></div>
-                                                    </div>
+                                                    Senin
                                                 </td>
                                                 <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Nur Alpiana">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-3.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Hariono Yusup">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-4.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Bagus Dwi Cahya">
+                                                    10 RPL
                                                 </td>
-                                                <td>2018-04-10</td>
+                                                <td>PBO</td>
                                                 <td>
-                                                    <div class="badge badge-info">Todo</div>
+                                                    06:45:00
                                                 </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>1</td>
                                                 <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Backup database</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="70%">
-                                                        <div class="progress-bar bg-warning" data-width="70"></div>
-                                                    </div>
+                                                    Senin
                                                 </td>
                                                 <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Rizal Fakhri">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-2.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Hasan Basri">
+                                                    10 RPL
                                                 </td>
-                                                <td>2018-01-29</td>
+                                                <td>PBO</td>
                                                 <td>
-                                                    <div class="badge badge-warning">In Progress</div>
+                                                    06:45:00
                                                 </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>1</td>
                                                 <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Input data</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="100%">
-                                                        <div class="progress-bar bg-success" data-width="100"></div>
-                                                    </div>
+                                                    Senin
                                                 </td>
                                                 <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-2.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Rizal Fakhri">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-5.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Isnap Kiswandi">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-4.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Yudi Nawawi">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Khaerul Anwar">
+                                                    10 RPL
                                                 </td>
-                                                <td>2018-01-16</td>
+                                                <td>PBO</td>
                                                 <td>
-                                                    <div class="badge badge-success">Completed</div>
+                                                    06:45:00
                                                 </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    Senin
+                                                </td>
+                                                <td>
+                                                    10 RPL
+                                                </td>
+                                                <td>PBO</td>
+                                                <td>
+                                                    06:45:00
+                                                </td>
+                                                <td>
+                                                    08:45:00
+                                                </td>
+                                                <td>
+                                                    Ires
+                                                </td>
+                                                <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                            class="far fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-icon btn-danger"><i
+                                                            class="fas fa-times"></i></a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <nav class="d-inline-block">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"><i
+                                                    class="fas fa-chevron-left"></i></a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1 <span
+                                                    class="sr-only">(current)</span></a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
