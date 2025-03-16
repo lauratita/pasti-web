@@ -9,7 +9,7 @@
         <ul class="sidebar-menu">
             {{-- DASHBOARD --}}
             <li class="menu-header">Dashboard</li>
-            <li class="nav-item dropdown {{ $type_menu === 'dashboard' ? 'active' : '' }}">
+            <li class="nav-item dropdown {{ isset($type_menu) && $type_menu === 'dashboard' ? 'active' : '' }}">
                 <a href="{{ route('dashboard') }}" class=""><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
 
@@ -45,7 +45,7 @@
             </li>
 
             {{-- PEGAWAI --}}
-            <li class="nav-item dropdown {{ $type_menu === 'pegawai' ? 'active' : '' }}">
+            <li class="nav-item dropdown {{ isset($type_menu) && $type_menu === 'pegawai' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i> <span>Pegawai</span></a>
                 <ul class="dropdown-menu">
                     <li class="{{ Request::is('daftar-pegawai') ? 'active' : '' }}">

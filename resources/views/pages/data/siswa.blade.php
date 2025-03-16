@@ -34,141 +34,168 @@
                                         </div>
                                     </form>
                                 </div>
+                                <a href="{{ route('tambah.data.siswa') }}" class="btn btn-icon icon-left btn-primary"><i
+                                        class="far fa-edit"></i>
+                                    Tambah Siswa</a>
                             </div>
                             <div class="card-body p-0">
                                 <div class="table-responsive">
-                                    <table class="table-striped table" id="sortable-table">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    <i class="fas fa-th"></i>
-                                                </th>
-                                                <th>Task Name</th>
-                                                <th>Progress</th>
-                                                <th>Members</th>
-                                                <th>Due Date</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Create a mobile app</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="100%">
-                                                        <div class="progress-bar bg-success" data-width="100"></div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-5.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Wildan Ahdian">
-                                                </td>
-                                                <td>2018-01-20</td>
-                                                <td>
-                                                    <div class="badge badge-success">Completed</div>
-                                                </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Redesign homepage</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="0%">
-                                                        <div class="progress-bar" data-width="0"></div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Nur Alpiana">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-3.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Hariono Yusup">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-4.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Bagus Dwi Cahya">
-                                                </td>
-                                                <td>2018-04-10</td>
-                                                <td>
-                                                    <div class="badge badge-info">Todo</div>
-                                                </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Backup database</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="70%">
-                                                        <div class="progress-bar bg-warning" data-width="70"></div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Rizal Fakhri">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-2.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Hasan Basri">
-                                                </td>
-                                                <td>2018-01-29</td>
-                                                <td>
-                                                    <div class="badge badge-warning">In Progress</div>
-                                                </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="sort-handler">
-                                                        <i class="fas fa-th"></i>
-                                                    </div>
-                                                </td>
-                                                <td>Input data</td>
-                                                <td class="align-middle">
-                                                    <div class="progress" data-height="4" data-toggle="tooltip"
-                                                        title="100%">
-                                                        <div class="progress-bar bg-success" data-width="100"></div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-2.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Rizal Fakhri">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-5.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Isnap Kiswandi">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-4.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Yudi Nawawi">
-                                                    <img alt="image" src="{{ asset('img/avatar/avatar-1.png') }}"
-                                                        class="rounded-circle" width="35" data-toggle="tooltip"
-                                                        title="Khaerul Anwar">
-                                                </td>
-                                                <td>2018-01-16</td>
-                                                <td>
-                                                    <div class="badge badge-success">Completed</div>
-                                                </td>
-                                                <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                            </tr>
-                                        </tbody>
+                                    <table class="table-striped table-md table">
+                                        <tr>
+                                            <th>NIS</th>
+                                            <th>Nama</th>
+                                            <th>Tanggal Lahir</th>
+                                            <th>Tahun Masuk</th>
+                                            <th>Kelas</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E41230629</td>
+                                            <td>
+                                                Laura Tita A.G
+                                            </td>
+                                            <td>
+                                                2004-07-14
+                                            </td>
+                                            <td>2020</td>
+                                            <td>
+                                                10 RPL 1
+                                            </td>
+                                            <td><a href="#" class="btn btn-icon btn-primary"><i
+                                                        class="far fa-edit"></i></a>
+                                                <a href="#" class="btn btn-icon btn-danger"><i
+                                                        class="fas fa-times"></i></a>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <nav class="d-inline-block">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"><i
+                                                    class="fas fa-chevron-left"></i></a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1 <span
+                                                    class="sr-only">(current)</span></a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>

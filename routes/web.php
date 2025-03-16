@@ -64,3 +64,8 @@ Route::get('/surat-izin', function () {
 Route::get('/rekap', function () {
     return view('pages.laporan.rekap', ['type_menu' => '']);
 })->name('rekap');
+
+// ADD data siswa
+Route::get('/add-data-siswa', function() {
+    return view('pages.data.tambahDataSiswa');
+})->name('tambah.data.siswa');
