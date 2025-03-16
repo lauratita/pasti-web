@@ -69,3 +69,8 @@ Route::get('/rekap', function () {
 Route::get('/add-data-siswa', function() {
     return view('pages.data.tambahDataSiswa');
 })->name('tambah.data.siswa');
+
+// ADD data kelas
+Route::get('/add-data-kelas', function() {
+    return view('pages.data.tambahDataKelas');
+})->name('tambah.data.kelas');
