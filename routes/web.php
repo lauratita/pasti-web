@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JenisPegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,14 +13,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('login');
-})->name('login');
-
-// dashboard
 // Route::get('/', function () {
-//     return view('pages.index', ['type_menu' => 'dashboard']);
-// })->name('dashboard');
+//     return view('login');
+// })->name('login');
+
+Route::get('/', function () {
+    return view('pages.index', ['type_menu' => 'dashboard']);
+})->name('dashboard');
 
 Route::get('/reset-password', function () {
     return view('pages.auth.resetPassword');
@@ -46,9 +46,13 @@ Route::get('/detail-mata-pelajaran', function () {
 Route::get('/daftar-pegawai', function () {
     return view('pages.data.pegawai', ['type_menu' => 'pegawai']);
 })->name('daftar.pegawai');
+Route::resource('jenisPegawai', JenisPegawaiController::class);
 Route::get('/jenis-pegawai', function () {
-    return view('pages.data.jenisPegawai', ['type_menu' => 'pegawai']);
+    return redirect()->route('jenisPegawai.index');
 })->name('jenis.pegawai');
+// Route::get('/jenis-pegawai', function () {
+//     return view('pages.data.jenisPegawai', ['type_menu' => 'pegawai']);
+// })->name('jenis.pegawai');
 
 // wali murid
 Route::get('/wali-murid', function () {
@@ -100,5 +104,5 @@ Route::get('/add-data-pegawai', function() {
 
 // ADD jenis pegawai
 Route::get('/add-jenis-pegawai', function() {
-    return view('pages.data.tambahJenisPegawai');
+    return redirect()->route('jenisPegawai.create');
 })->name('tambah.jenis.pegawai');
