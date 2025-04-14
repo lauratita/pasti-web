@@ -17,9 +17,9 @@ Route::get('/', function () {
 })->name('login');
 
 // dashboard
-// Route::get('/', function () {
-//     return view('pages.index', ['type_menu' => 'dashboard']);
-// })->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('pages.index', ['type_menu' => 'dashboard']);
+})->name('dashboard');
 
 Route::get('/reset-password', function () {
     return view('pages.auth.resetPassword');
