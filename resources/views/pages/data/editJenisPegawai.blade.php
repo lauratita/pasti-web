@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Form Jenis Pegawai')
+@section('title', 'Form Edit Jenis Pegawai')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -16,18 +16,18 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Form Jenis Pegawai</h1>
+                <h1>Form Edit Jenis Pegawai</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard') }}">Dashboard</a></div>
                     <div class="breadcrumb-item"><a href="{{ route('jenisPegawai.index') }}">Jenis Pegawai</a></div>
-                    <div class="breadcrumb-item">Tambah Jenis Pegawai</div>
+                    <div class="breadcrumb-item">Edit Jenis Pegawai</div>
                 </div>
             </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>Tambah Jenis Pegawai</h4>
+                                <h4>Form Edit Jenis Pegawai</h4>
                             </div>
                             <div class="card-body">
                                 @if(session('error'))
@@ -41,17 +41,18 @@
                                     </div>
                                 @endif
 
-                                <form action="{{ route('jenisPegawai.store') }}" method="POST">
+                                <form action="{{ route('jenisPegawai.update', $jenisPegawai->id_jenispegawai) }}" method="POST">
                                     @csrf
+                                    @method('PUT')
                                     <div class="form-group">
                                         <label for="nama">Jenis Pegawai</label>
                                         <input type="text"
-                                               class="form-control @error('nama') is-invalid @enderror"
-                                               id="nama"
-                                               name="nama"
-                                               value="{{ old('nama') }}"
-                                               placeholder="Masukkan Jenis Pegawai"
-                                               required>
+                                            class="form-control @error('nama') is-invalid @enderror"
+                                            id="nama"
+                                            name="nama"
+                                            value="{{ old('nama', $jenisPegawai->nama) }}"
+                                            placeholder="Masukkan Jenis Pegawai"
+                                            required>
                                         @error('nama')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
@@ -60,7 +61,7 @@
                                     </div>
                                     <div class="card-footer text-right">
                                         <a href="{{ route('jenisPegawai.index') }}" class="btn btn-secondary">Batal</a>
-                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                        <button type="submit" class="btn btn-primary">Perbarui</button>
                                     </div>
                                 </form>
                             </div>
