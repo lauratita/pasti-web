@@ -16,9 +16,10 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Form Edit Jenis Pegawai</h1>
+                <h1>Jenis Pegawai</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard') }}">Dashboard</a></div>
+                    <div class="breadcrumb-item"><a href="#">Pegawai</a></div>
                     <div class="breadcrumb-item"><a href="{{ route('jenisPegawai.index') }}">Jenis Pegawai</a></div>
                     <div class="breadcrumb-item">Edit Jenis Pegawai</div>
                 </div>
@@ -27,7 +28,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>Form Edit Jenis Pegawai</h4>
+                                <h4>Edit Jenis Pegawai</h4>
                             </div>
                             <div class="card-body">
                                 @if(session('error'))
