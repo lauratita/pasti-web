@@ -12,11 +12,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function () {
+    return view('login');
+})->name('login');
 
 // dashboard
-Route::get('/', function () {
-    return view('pages.index', ['type_menu' => 'dashboard']);
-})->name('dashboard');
+// Route::get('/', function () {
+//     return view('pages.index', ['type_menu' => 'dashboard']);
+// })->name('dashboard');
 
 Route::get('/reset-password', function () {
     return view('pages.auth.resetPassword');
