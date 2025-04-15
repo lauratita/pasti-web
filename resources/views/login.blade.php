@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
         name="viewport">
-    <title>Login &mdash; Stisla</title>
+    <title>Login &mdash; PASTI</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet"
@@ -37,25 +37,24 @@
                             alt="logo"
                             width="80"
                             class="shadow-light rounded-circle mb-5 mt-2">
-                        <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Stisla</span>
+                        <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">PASTI</span>
                         </h4>
-                        <p class="text-muted">Before you get started, you must login or register if you don't already
-                            have an account.</p>
+                        <p class="text-muted">Sebelum Anda melanjutkan, silakan masuk atau daftar terlebih dahulu jika Anda belum memiliki akun.</p>
                         <form method="POST"
                             action="#"
                             class="needs-validation"
                             novalidate="">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email"
+                                <label for="nik_pegawai">NIK</label>
+                                <input id="nik_pegawai"
                                     type="email"
                                     class="form-control"
-                                    name="email"
+                                    name="nik_pegawai"
                                     tabindex="1"
                                     required
                                     autofocus>
                                 <div class="invalid-feedback">
-                                    Please fill in your email
+                                    Silakan isi NIK Anda
                                 </div>
                             </div>
 
@@ -71,11 +70,11 @@
                                     tabindex="2"
                                     required>
                                 <div class="invalid-feedback">
-                                    please fill in your password
+                                    SIlahkan isi password Anda
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox"
                                         name="remember"
@@ -85,12 +84,12 @@
                                     <label class="custom-control-label"
                                         for="remember-me">Remember Me</label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group text-right">
                                 <a href="auth-forgot-password.html"
                                     class="float-left mt-3">
-                                    Forgot Password?
+                                    Lupa Password?
                                 </a>
                                 <button type="submit"
                                     class="btn btn-primary btn-lg btn-icon icon-right"
@@ -99,13 +98,13 @@
                                 </button>
                             </div>
 
-                            <div class="mt-5 text-center">
+                            {{-- <div class="mt-5 text-center">
                                 Don't have an account? <a href="auth-register.html">Create new one</a>
-                            </div>
+                            </div> --}}
                         </form>
 
                         <div class="text-small mt-5 text-center">
-                            Copyright &copy; Your Company. Made with 💙 by Stisla
+                            Copyright &copy; PASTI. Design by MafiaTeam
                             <div class="mt-2">
                                 <a href="#">Privacy Policy</a>
                                 <div class="bullet"></div>
@@ -115,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-12 order-lg-2 min-vh-100 background-walk-y position-relative overlay-gradient-bottom order-1"
-                    data-background="{{ asset('img/unsplash/login-bg.jpg') }}">
+                    data-background="{{ asset('img/unsplash/smk3jember.jpg') }}">
                     <div class="absolute-bottom-left index-2">
                         <div class="text-light p-5 pb-2">
                             <div class="mb-5 pb-3">
@@ -124,7 +123,7 @@
                             </div>
                             Photo by <a class="text-light bb"
                                 target="_blank"
-                                href="https://unsplash.com/photos/a8lTjWJJgLA">Justin Kauffman</a> on <a
+                                href="https://unsplash.com/photos/a8lTjWJJgLA">MafiaTeam</a> on <a
                                 class="text-light bb"
                                 target="_blank"
                                 href="https://unsplash.com">Unsplash</a>

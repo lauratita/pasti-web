@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('nama', 50)->nullable();
         });
 
-        DB::table('tb_jenispegawai')->insert([
-            ['nama' => 'Admin'],
-            ['nama' => 'Guru'],
-        ]);
+        // DB::table('tb_jenispegawai')->insert([
+        //     ['nama' => 'Admin'],
+        //     ['nama' => 'Guru'],
+        // ]);
 
         Schema::create('tb_pegawai', function (Blueprint $table) {
             $table->id('id_pegawai');
