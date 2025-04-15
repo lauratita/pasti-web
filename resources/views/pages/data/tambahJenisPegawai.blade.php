@@ -16,9 +16,10 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Form Jenis Pegawai</h1>
+                <h1>Jenis Pegawai</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard') }}">Dashboard</a></div>
+                    <div class="breadcrumb-item"><a href="#">Pegawai</a></div>
                     <div class="breadcrumb-item"><a href="{{ route('jenisPegawai.index') }}">Jenis Pegawai</a></div>
                     <div class="breadcrumb-item">Tambah Jenis Pegawai</div>
                 </div>

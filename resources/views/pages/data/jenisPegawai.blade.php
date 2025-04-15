@@ -62,10 +62,14 @@
                                                           class="d-inline">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button class="btn btn-icon btn-danger"
-                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                        <button class="btn btn-icon btn-danger delete-btn"
+                                                                type="button">
                                                             <i class="fas fa-times"></i>
                                                         </button>
+                                                        <!-- <button class="btn btn-icon btn-danger"
+                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                            <i class="fas fa-times"></i>
+                                                        </button> -->
                                                     </form>
                                                 </td>
                                             </tr>
@@ -88,4 +92,32 @@
 
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/components-table.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Event listener untuk tombol hapus jenis pegawai
+            $(document).on('click', '.delete-btn', function(e) {
+            // $(document).on('click', '.btn-danger', function(e) {
+                e.preventDefault();
+
+                const form = $(this).closest('form');
+                const jenisPegawai = $(this).closest('tr').find('td:nth-child(2)').text();
+
+                Swal.fire({
+                    title: 'Apakah Anda yakin?',
+                    text: `Anda akan menghapus jenis pegawai "${jenisPegawai}"`,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Ya, hapus!',
+                    cancelButtonText: 'Batal'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    </script>
 @endpush
