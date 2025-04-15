@@ -6,10 +6,12 @@ use App\Http\Middleware\Authenticate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
+
 
 class OrangTua extends Authenticatable
 {
-    use HasFactory;
+    use HasFactory, HasApiTokens;
 
     protected $table = 'tb_orangtua';
     protected $primaryKey = 'id_ortu';

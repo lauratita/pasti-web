@@ -13,12 +13,10 @@ use App\Http\Controllers\JenisPegawaiController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('login');
 })->name('login');
 
-// dashboard
 Route::get('/dashboard', function () {
     return view('pages.index', ['type_menu' => 'dashboard']);
 })->name('dashboard');
