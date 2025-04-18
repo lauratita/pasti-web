@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JenisPegawaiController;
+use App\Http\Controllers\OrangTuaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,9 +58,13 @@ Route::get('/jenis-pegawai', function () {
 // })->name('jenis.pegawai');
 
 // wali murid
+Route::resource('orangTua', OrangTuaController::class);
 Route::get('/wali-murid', function () {
-    return view('pages.data.waliMurid', ['type_menu' => '']);
+    return redirect()->route('orangTua.index');
 })->name('wali.murid');
+// Route::get('/wali-murid', function () {
+//     return view('pages.data.orangTua', ['type_menu' => '']);
+// })->name('wali.murid');
 
 // siswa
 Route::get('/presensi', function () {
@@ -96,8 +101,8 @@ Route::get('/add-data-detailMapel', function() {
 
 // ADD data wali murid
 Route::get('/add-data-waliMurid', function() {
-    return view('pages.data.tambahWaliMurid');
-})->name('tambah.data.waliMurid');
+    return redirect()->route('orangTua.create');
+})->name('tambah.data.orangTua');
 
 // ADD data pegawai
 Route::get('/add-data-pegawai', function() {

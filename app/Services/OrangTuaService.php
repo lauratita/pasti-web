@@ -53,7 +53,7 @@ class OrangTuaService
                 'no_hp_ortu'   => $data['no_hp_ortu'],
                 'jk_ortu'      => $data['jk_ortu'],
                 'email'        => $data['email'],
-                'password'     => Hash::make($data['password']),
+                'password'     => Hash::make($data['nik_ortu']),
             ]);
         } catch (Exception $e) {
             Log::error('Error creating orang tua: ' . $e->getMessage());
@@ -67,8 +67,8 @@ class OrangTuaService
             $ortu = $this->model->findOrFail($id);
 
             // Jika password disertakan dalam update, hash ulang
-            if (!empty($data['password'])) {
-                $data['password'] = Hash::make($data['password']);
+            if (!empty($data['nik_ortu'])) {
+                $data['password'] = Hash::make($data['nik_ortu']);
             } else {
                 unset($data['password']); // Hindari update kolom password jadi null
             }
